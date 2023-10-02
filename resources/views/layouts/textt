@@ -1,0 +1,24 @@
+ <main class="split-button">
+    <button onclick="handleSplitButtonClicked()">
+       <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart <span class="badge bg-danger">{{ count((array) session('cart')) }}</span></button>
+    <button onclick="toggleDropdownButton()">
+      <span id="chevron" class="chevron material-symbols-sharp">
+        expand_more
+      </span>
+    </button>
+    <section id="main-menu" class="main-menu">
+          @if(session('cart'))
+                        @foreach(session('cart') as $id => $details)
+      <button onclick="handleMenuLabelButtonClicked()">
+        <span class="material-symbols-sharp"> person_pin_circle </span>
+                                          <img src="{{ asset('img') }}/{{ $details['photo'] }}" />
+                                </div>
+                                <div class="col-lg-8 col-sm-8 col-8 cart-detail-product">
+                                    <p>{{ $details['product_name'] }}</p>
+                                    <span class="price text-success"> ${{ $details['price'] }}</span> <span class="count"> Quantity:{{ $details['quantity'] }}</span>
+      </button>
+                        @endforeach
+    
+     
+    </section>
+  </main>

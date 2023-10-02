@@ -1,0 +1,33 @@
+.card-wrap {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.card-wrap .card {
+  flex: 1 0 0;
+}
+.card-wrap .card .btn {
+  margin-top: auto;
+}
+.card-wrap .card-body {
+  display: flex;
+  flex-direction: column;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: black;
+  width: 25px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 25px;
+}
+.con1{
+  display: flex;
+  flex-direction: column;
+}
+.con2{
+  display: flex;
+justify-content: space-between;
+}

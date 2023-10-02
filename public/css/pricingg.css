@@ -1,0 +1,8 @@
+.panel-pricing-in{
+    display: flex;
+}
+.panel h3 {
+    padding: 20px;
+    background-color: red;
+}
+ 

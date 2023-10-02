@@ -1,0 +1,35 @@
+:root{
+      --e-global-color-primary: #6EC1E4;
+    --e-global-color-secondary: #54595F;
+    --e-global-color-text: #7A7A7A;
+      --primary: #86B817;
+    --secondary: #FE8800;
+    --light: #F5F5F5;
+    --dark: #14141F;
+    --e-global-color-accent: #2a722e;
+        --btn-accented-bgcolor-hover: rgb(116,163,47);
+}
+footer #icons{
+z-index: 2;
+} 
+#icons a{
+color:  white !important;
+}
+#icons a:hover{
+color:  var(--e-global-color-accent) !important;
+transition: 0.4s;
+}
+footer h6,
+footer .container i {
+    color: #80c000 !important;
+}
+footer .me-4 ,
+footer .me-5 {
+    color: white;
+    z-index: 2;
+}
+footer .me-4:hover {
+    transition: 0.4s;
+    color: #80c000;
+
+}
